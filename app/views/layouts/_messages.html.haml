@@ -1,0 +1,6 @@
+#flash-banner
+	- flash.each do |key, msg|
+		= content_tag :div, msg, :class => "flash " + key.to_s, :id => key.to_s + "-message"
+		= content_tag :script, :type => "text/javascript" do
+			$('##{key.to_s + "-message"}').css('display', 'none');
+			$('##{key.to_s + "-message"}').slideDown().delay(2000).slideUp();

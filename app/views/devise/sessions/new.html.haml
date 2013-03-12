@@ -1,0 +1,17 @@
+= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
+	.row.sign-in-page
+		.span8.offset2
+			.row
+				= f.input :email, :autofocus => true, :label => false
+			.row
+				= f.input :password, :label => false
+			.row
+				.span1{:style => "width: 15px;"}
+					= f.input :remember_me, :as => :boolean, :label => false if devise_mapping.rememberable?
+				.span4{:style => "margin-left: 10px;"}
+					%label remember me
+			.row
+				.span2{:style=>"width: 150px;"}
+					= link_to "new user?", new_registration_path(resource_name)
+				.span2 
+					= f.button :submit, "Login", :class => 'btn-primary'

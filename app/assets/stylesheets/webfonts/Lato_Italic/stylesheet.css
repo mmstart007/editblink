@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Lato-Italic';
+	src: url('lato-italic-webfont.eot');
+	src: url('lato-italic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('lato-italic-webfont.woff') format('woff'),
+		url('lato-italic-webfont.ttf') format('truetype'),
+		url('lato-italic-webfont.svg') format('svg');
+}

@@ -1,0 +1,209 @@
+@import "bootstrap";
+body { 
+  padding-top: 125px; 
+  color: #595858;
+  font-family: Lato-LightItalic,'Lato',sans-serif;  
+}
+@import "bootstrap-responsive";
+
+
+#flash-banner {
+  //#notice-message, #alert-message,
+  .flash.notice, .flash.alert {
+    z-index: 999;
+    /*display:none;*/
+    /*position:fixed;*/
+    left:10px;
+    top:10px;
+    -moz-border-radius : 4px;
+    border-radius : 4px;
+    padding: 5px 8px;
+    margin: 0 auto 10px;
+
+    /* width: 492px; */
+    text-align:center;
+  }
+
+  //#notice-message,
+  .flash.notice {
+    background-color: #CCFFCC;
+    border: 1px solid #66CC66;
+    left: 19%;
+    top: 80px;
+    z-index: 9999;
+  }
+
+
+  #alert-message,
+  .flash.alert {
+    background-color: #FCC;
+    border: solid 1px #C66;
+  }
+}
+
+div.navbar-fixed-top{
+	.navbar-inner {
+    background-color: #F9F9F9;
+    background-image: none;
+    border: 1px solid #D4D4D4;
+    border-radius: 0px;
+    box-shadow: none;
+    min-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    ul.nav{
+    	float:right;
+    	margin-top: 30px;
+    }
+	}
+}
+
+
+div.container{
+  .content{
+    background-color: #fff;
+    input[type="text"], input[type="email"], input[type="password"]{
+      border-color: rgba(210, 210, 210, 0.9);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(100, 100, 100, 0.6);
+      outline: 0 none;
+      height: 30px;
+      font-family: Lato-LightItalic,'Lato',sans-serif;
+      font-size: 23px;  
+    }
+  }  
+}
+
+
+div.home-page{
+  .row{
+    margin-bottom: 20px;
+    .span8{
+      input{
+        width: 100%;
+        height: 35px;
+        font-size: 23px;  
+      }
+      textarea{
+        width: 100%;
+        background: none repeat scroll 0 0 transparent;
+        color: #595858;
+        font-family: Lato-LightItalic,'Lato',sans-serif;
+        font-size: 19px;
+        height: 330px;
+        line-height: 23px;
+        overflow: auto;
+        resize: none;
+        text-align: left;      
+        border-color: rgba(210, 210, 210, 0.9);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(100, 100, 100, 0.6);
+        outline: 0 none;
+      }
+      .span2{
+        margin-left:20px;
+        .controller-box{
+          width: 90%;
+          border-color: rgba(210, 210, 210, 0.9);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(100, 100, 100, 0.6);
+          outline: 0 none;
+          height: 35px;
+          margin-top: 10px;
+          label{
+            float: left;
+            font-size: 23px;
+            margin: 6px 2px 0 5px;
+          }
+          input[type="text"]{
+            width: 45%;        
+            color: #595858;
+            float: right;
+            font-family: Lato-LightItalic,'Lato',sans-serif;
+            font-size: 23px;
+            font-weight: 300;
+            line-height: 23px;
+            border: none;
+            margin-bottom: 0px;
+            height: 27px;
+            text-align: center;
+            border-color: none;
+            box-shadow: none;
+          }
+          input[readonly]{
+            background-color: white;
+            cursor: text;
+          }
+          input[type="text"]:focus{
+            border-color: none;
+            box-shadow: none;
+          }
+          input[type="submit"]{
+            border-color: none;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+          }
+          input[type="submit"]:focus{
+            border-color: none;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+          }
+          input.cost{
+            width: 58%;
+          }
+        }        
+      }
+    } 
+  }
+}
+
+div.sign-in-page{
+  input[type="email"], input[type="password"]{
+    width: 280px;
+  }
+  input[type="submit"]{
+    font-family: Lato-LightItalic,'Lato',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 35px;
+    width: 146px;
+  }
+  .span8{
+    [class*="span"]{
+      margin-left: 0px;
+    }
+  }  
+}
+
+div.sign-up-page{
+  p.payment-detail{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  input[type="text"], input[type="password"], input[type="email"]{
+    width: 320px;
+    text-align: center;
+  }
+  .span2{
+    margin-left: 0px;
+    input[type="text"]{
+      width: 150px;
+    }
+    select{
+      width: 65px;
+      height: 35px;
+    }
+  }
+  #user_ccv_number{
+    width: 110px;
+  }
+  input[type="submit"]{
+    font-size: 24px;
+    font-weight: bold;
+    height: 40px;
+    width: 200px;
+    font-family: Lato-LightItalic,'Lato',sans-serif;
+  }
+}

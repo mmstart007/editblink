@@ -1,0 +1,40 @@
+.row.sign-up-page
+	.span8.offset2
+		%h2{:style=>"margin-left: 90px;"} Signup for Edit Blink
+		= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'form-vertical', "data-validate" => "parsley" }) do |f|
+			= f.error_notification
+			= display_base_errors resource
+			.row.first-row
+				.span8.offset1
+					.row
+						= f.input :name, :required => true, :autofocus => true, :label => false, :placeholder=>"Username"
+					.row
+						= f.input :password, :required => true, :label => false, :placeholder=>"Password"
+					.row
+						= f.input :password_confirmation, :required => true, :label => false, :placeholder=>"Re-type Password"
+					.row
+						= f.input :email, :required => true, :label => false, :placeholder=>"Email"
+					.row
+						= f.input :mobile_number, :label => false, :placeholder=>"Mobile number"
+			.row.second-row
+				.span8.offset1
+					.row
+						.span3
+							%p.payment-detail Payment Details
+					.row
+						= f.input :mobile_number, :required => true, :label => false, :placeholder=>"Credit card number"
+					.row
+						.span2{:style=>"width:210px;"}
+							= f.input :exp_date, :required => true, :label => false, :placeholder=>"Exp Date"
+						.span2
+							= f.input :ccv_number, :required => true, :label => false, :placeholder=>"CCV#"
+					.row
+						= f.input :billing_address, :required => true, :label => false, :placeholder=>"Billing address"
+					.row
+						.span2
+							= f.input :city_state, :required => true, :label => false, :placeholder=>"City, state"
+						.span2
+							= f.input :zip_code, :required => true, :label => false, :placeholder=>"Zip"
+					.row			
+						.span3{:style=>"margin-left: 60px;"}
+							= f.button :submit, 'Sign up', :class => 'btn-primary'

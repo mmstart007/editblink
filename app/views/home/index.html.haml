@@ -1,0 +1,25 @@
+.row.first-row
+	.span12.home-page
+		.row
+			.span8.offset2
+				%input{:type=>"text", :placeholder=>"Title of Job"}
+		.row
+			.span8.offset2
+				%textarea.job-input-box{:cols=>72, :rows=>20, :placeholder => "paste text here to begin..."}
+		.row
+			.span8.offset2
+				.span2
+					.controller-box
+						%label Words
+						%input.words{:type=>"text", :readonly => "readonly"}
+				.span2
+					.controller-box
+						%label Rate
+						%input.rate{:type=>"text", :readonly => "readonly"}
+				.span2
+					.controller-box
+						%label Cost
+						%input.cost{:type=>"text", :readonly => "readonly"}
+				.span2
+					.controller-box
+						%input{:type=>"submit", :value=>"Pay"}
